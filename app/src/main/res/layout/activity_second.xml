@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onlyScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SecondActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondScreenConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/option1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/optionText1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputLine1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-10dp"
+            android:layout_marginBottom="400dp"
+            android:cursorVisible="true"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:isScrollContainer="false"
+            android:maxLength="33"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton1"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toEndOf="@+id/option1Text"
+            app:layout_constraintTop_toBottomOf="@+id/option1Text"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backButtonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/clearButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/inputLine1"
+            app:layout_constraintTop_toTopOf="@+id/inputLine1"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option2Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine1" />
+
+        <EditText
+            android:id="@+id/inputLine2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton2"
+            app:layout_constraintStart_toEndOf="@+id/option2Text"
+            app:layout_constraintTop_toBottomOf="@+id/option2Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/inputLine2"
+            app:layout_constraintTop_toTopOf="@+id/inputLine2"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option3Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/optionText3"
+            app:layout_constraintEnd_toStartOf="@+id/inputLine2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine2" />
+
+        <ImageButton
+            android:id="@+id/clearButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine3"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <EditText
+            android:id="@+id/inputLine3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/option3Text"
+            app:layout_constraintTop_toBottomOf="@+id/option3Text" />
+
+        <TextView
+            android:id="@+id/option4Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 4"
+            app:layout_constraintEnd_toStartOf="@+id/inputLine3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine3" />
+
+        <EditText
+            android:id="@+id/inputLine4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton4"
+            app:layout_constraintStart_toEndOf="@+id/option4Text"
+            app:layout_constraintTop_toBottomOf="@+id/option4Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine4"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option5Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 5"
+            app:layout_constraintEnd_toStartOf="@+id/inputLine4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine4" />
+
+        <EditText
+            android:id="@+id/inputLine5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton5"
+            app:layout_constraintStart_toEndOf="@+id/option5Text"
+            app:layout_constraintTop_toBottomOf="@+id/option5Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine5"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option6Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine5" />
+
+        <EditText
+            android:id="@+id/inputLine6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton6"
+            app:layout_constraintStart_toEndOf="@+id/option6Text"
+            app:layout_constraintTop_toBottomOf="@+id/option6Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option7Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine6" />
+
+        <EditText
+            android:id="@+id/inputLine7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton7"
+            app:layout_constraintStart_toEndOf="@+id/option7Text"
+            app:layout_constraintTop_toBottomOf="@+id/option7Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine7"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option8Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 8"
+            app:layout_constraintEnd_toStartOf="@+id/inputLine7"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine7" />
+
+        <EditText
+            android:id="@+id/inputLine8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton8"
+            app:layout_constraintStart_toEndOf="@+id/option8Text"
+            app:layout_constraintTop_toBottomOf="@+id/option8Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine8"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option9Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine8" />
+
+        <EditText
+            android:id="@+id/inputLine9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton9"
+            app:layout_constraintStart_toEndOf="@+id/option9Text"
+            app:layout_constraintTop_toBottomOf="@+id/option9Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine9"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option10Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine9" />
+
+        <EditText
+            android:id="@+id/inputLine10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton10"
+            app:layout_constraintStart_toEndOf="@+id/option9Text"
+            app:layout_constraintTop_toBottomOf="@+id/option10Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine10"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/option11Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLine10" />
+
+        <EditText
+            android:id="@+id/inputLine11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Type Something"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="33"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton11"
+            app:layout_constraintStart_toEndOf="@+id/option9Text"
+            app:layout_constraintTop_toBottomOf="@+id/option11Text" />
+
+        <ImageButton
+            android:id="@+id/clearButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/inputLine11"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+<!---->
+
+

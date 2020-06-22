@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Randomizer</string>
+    <string name="randomizeButtonText">Randomize!</string>
+    <string name="howManyText">How many?</string>
+    <string name="optionText1">Option 1</string>
+    <string name="SwitchText1">Set Choices</string>
+    <string name="backButtonText">Back</string>
+    <string name="optionText3">Option 3</string>
+</resources>
